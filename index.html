@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Selection</title>
+</head>
+<body>
+
+  <h2>Select Mobile and Model</h2>
+
+  <!-- First drop-down for Mobile Phone Names -->
+  <label for="mobileName">Select Mobile Brand:</label>
+  <select id="mobileName">
+    <option value="">--Select Brand--</option>
+  </select>
+
+  <br><br>
+
+  <!-- Second drop-down for Mobile Models -->
+  <label for="mobileModel">Select Model:</label>
+  <select id="mobileModel" disabled>
+    <option value="">--Select Model--</option>
+  </select>
+
+  <br><br>
+
+  <!-- Show Mobile Specification -->
+  <div id="specification" style="display:none;">
+    <h3>Specifications</h3>
+    <p id="specDetails"></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+ 
