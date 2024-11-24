@@ -3,35 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mobile Selection</title>
+  <title>Mobile Brand and Model Filter</title>
 </head>
 <body>
-
-  <h2>Select Mobile and Model</h2>
-
-  <!-- First drop-down for Mobile Phone Names -->
-  <label for="mobileName">Select Mobile Brand:</label>
-  <select id="mobileName">
+  <h1>Mobile Brand and Model Filter</h1>
+  
+  <!-- Brand Dropdown -->
+  <label for="brand">Select Brand:</label>
+  <select id="brand" onchange="updateModels()">
     <option value="">--Select Brand--</option>
   </select>
 
-  <br><br>
-
-  <!-- Second drop-down for Mobile Models -->
-  <label for="mobileModel">Select Model:</label>
-  <select id="mobileModel" disabled>
+  <!-- Model Dropdown -->
+  <label for="model">Select Model:</label>
+  <select id="model">
     <option value="">--Select Model--</option>
   </select>
 
-  <br><br>
+  <!-- Search Button -->
+  <button onclick="showDetails()">Search</button>
 
-  <!-- Show Mobile Specification -->
-  <div id="specification" style="display:none;">
-    <h3>Specifications</h3>
-    <p id="specDetails"></p>
-  </div>
+  <!-- Output Section -->
+  <h2>Selected Mobile Details:</h2>
+  <div id="output"></div>
 
-  <script src="app.js"></script>
+ <script src="app.js"></script>
 </body>
-</html>
- 
+</html> 
